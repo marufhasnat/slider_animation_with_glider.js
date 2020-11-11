@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Landing Page With Slider Animation By Glide JS</title>
+	<!-- favicon icon -->
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/b1ffafec85.js" crossorigin="anonymous"></script>
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/glide.core.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	
+
+
+
+<section class="container-fluid wrapper">
+	<div class="row no-gutters">
+		<!-- header with banner -->
+		<div class="col-lg-6 col-md-12">
+			<div class="head_banner crimson">
+				<header>
+					<nav class="navbar navbar-expand-xl navbar-light">
+						<a class="navbar-brand" href="#">Travel</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Features</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Pricing</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</header>
+				<div class="banner">
+					<div class="banner_content">
+						<h1>Slide Your Best <br> Pictures</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis expedita, eos laboriosam tenetur saepe? Inventore sequi blanditiis voluptatem amet, consequuntur. Neque reiciendis odio nostrum voluptas praesentium quidem tempora aut.</p>
+						<a href="#">Travel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- slider -->
+		<div class="col-lg-6 col-md-12 mt-5">
+			<div class="glide">
+				<div class="glide_cover"></div>
+				<div class="glide__track" data-glide-el="track">
+					<ul class="glide__slides">
+						<li class="glide__slide">
+							<div class="slide one">
+								<p>Bali,Indonesia</p>
+								<div class="slider-image">
+									<img src="img/1.jpg" alt="place">
+									<div class="bookmark">
+										<i class="fa fa-bookmark"></i>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="slide one">
+								<p>Melbourn,Australia</p>
+								<div class="slider-image">
+									<img src="img/2.jpg" alt="place">
+									<div class="bookmark">
+										<i class="fa fa-bookmark"></i>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="slide one">
+								<p>Maldi,Maldip</p>
+								<div class="slider-image">
+									<img src="img/3.jpg" alt="place">
+									<div class="bookmark">
+										<i class="fa fa-bookmark"></i>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="glide__slide">
+							<div class="slide one">
+								<p>Suala,Singapur</p>
+								<div class="slider-image">
+									<img src="img/4.jpg" alt="place">
+									<div class="bookmark">
+										<i class="fa fa-bookmark"></i>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div data-glide-el="controls" class="controls">
+					<div data-glide-dir="<" id="prev"><i class="fa fa-arrow-left i-left"></i></div>
+					<div data-glide-dir=">" id="next"><i class="fa fa-arrow-right i-right"></i></div>
+				</div>
+			</div>
+		</div>
+</section>
+
+
+
+<!-- JS -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/glide.min.js"></script>
+
+
+<script>
+	document.addEventListener("DOMContentLoaded", () => {
+        new Glide(".glide",{
+            type: "carousel",
+            startAt: 0,
+            animationTimingFunc: "ease-in-out",
+            gap: 140,
+            perView: 2
+        }).mount();
+	});
+</script>
+
+
+</body>
+</html>
